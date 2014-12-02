@@ -1,6 +1,6 @@
 <?php
 define("SITE_NAME" 		, "platemaps.com"); 	//setting nama website
-define("SITE_DB"			, "ryanlearn");		//setting nama database
+define("SITE_DB"			, "platemaps");		//setting nama database
 define("SITE_DB_DRIVER"		, "");			//setting driver pdo
 define("SITE_DB_HOST"		, "localhost");		//setting nama host
 define("SITE_DB_USERNAME" 	, "root");			//setting username database

@@ -194,3 +194,8 @@ create table review(
     foreign key(restaurant_id) references restaurant(restaurant_id) on delete cascade,
     foreign key(users_id) references users(users_id) on delete cascade
 );
+
+
+alter table company 
+	add column users_id int,
+    add foreign key(users_id) references users(users_id) on delete cascade;
