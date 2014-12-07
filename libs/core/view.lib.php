@@ -1,8 +1,9 @@
 <?php
 class View extends Singleton{
 	private $prop = array();
-	private static $csspattern = '<link rel="stylesheet" type="text/css" href="%s" />';
-	private static $jspattern = '<script src="%s"></script>';
+	private static $linkpattern = '<link rel="%s" type="%s" href="%s" />';
+	private static $jspattern 	= '<script src="%s"></script>';
+	private static $metapattern = '<meta name="%s" content="%s" />';
 
 	public function __set($var , $val){ $this->prop[$var] = $val; }
 	public function __get($var){ return $this->prop[$var]; }
@@ -34,9 +35,25 @@ class View extends Singleton{
 		return SITE_URL . '/public/img/';
 	}
 
-	public static function includeJs(){}
+	public static function js($param , $thirdparty = false){
+		$url = self::jspath();
+		switch($param){
+			case 'bootstrap':
+				$url .= 'bootstrap.min.js';
+			break;
+			case 'jquery':
+				$url .= 'jquery.min.js';
+			break;
+			default:
+				if($thirdparty)
+					$url = $param;
+				else
+					$url .= $param;
+		}
+		echo sprintf(self::$jspattern , $url);
+	}
 
-	public static function includeCss($param , $thirdparty = false){
+	public static function css($param , $thirdparty = false){
 		$url = self::csspath();
 		switch($param){
 			case "bootstrap" : 
@@ -49,11 +66,10 @@ class View extends Singleton{
 					$url .= $param;
 		}
 
-		echo sprintf(self::$csspattern , $url);
+		echo sprintf(self::$linkpattern , 'stylesheet' , 'text/css' , $url);
 	}
 
 	public static function includeImg(){}
-	public static function includeMeta(){}
 
 	public static function bootstrapCss(){
 		echo '<link rel="stylesheet" type="text/css" href="" />';
@@ -83,5 +99,12 @@ class View extends Singleton{
 		echo "</body>";
 	}
 
+	public static function title($title){
+		echo '<title>'. $title .'</title>';
+	}
+
+	public static function meta($name , $content){
+		echo sprintf(self::$metapattern , $name , $content);
+	}
 }
 ?>
