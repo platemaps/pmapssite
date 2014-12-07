@@ -1,6 +1,8 @@
 <?php
 class View extends Singleton{
 	private $prop = array();
+	private static $csspattern = '<link rel="stylesheet" type="text/css" href="%s" />';
+	private static $jspattern = '<script src="%s"></script>';
 
 	public function __set($var , $val){ $this->prop[$var] = $val; }
 	public function __get($var){ return $this->prop[$var]; }
@@ -20,10 +22,42 @@ class View extends Singleton{
 		}
 	}
 
+	private static function csspath(){
+		return SITE_URL . '/public/css/';
+	}
+
+	private static function jspath(){
+		return SITE_URL . '/public/js/';
+	}
+
+	private static function imgpath(){
+		return SITE_URL . '/public/img/';
+	}
+
 	public static function includeJs(){}
-	public static function includeCss(){}
+
+	public static function includeCss($param , $thirdparty = false){
+		$url = self::csspath();
+		switch($param){
+			case "bootstrap" : 
+				$url .= 'bootstrap.min.css';
+				break;
+			default :
+				if($thirdparty)
+					$url = $param;
+				else
+					$url .= $param;
+		}
+
+		echo sprintf(self::$csspattern , $url);
+	}
+
 	public static function includeImg(){}
 	public static function includeMeta(){}
+
+	public static function bootstrapCss(){
+		echo '<link rel="stylesheet" type="text/css" href="" />';
+	}
 
 	public static function begin(){
 		echo "<!DOCTYPE html><html>";
