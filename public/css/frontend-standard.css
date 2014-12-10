@@ -1,0 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+html,body{
+	height:100%;
+}
+
+h1,h2,h3,h4,h5,p,span,body{
+	font-family: "Open Sans" , sans-serif;
+}
+
+.center-element{
+	text-align:center;
+}
+
+.stay-bottom{
+	position: absolute;;
+	bottom:0;
+	left:0;
+	width:100%;
+}
