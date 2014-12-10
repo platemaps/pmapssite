@@ -12,9 +12,9 @@ View::beginBody();
 <div id="Wrapper">
 	<div id="Wrapper-header">
 		<div class="container">
-			<div id="navbar-header">
+			<!--div id="navbar-header">
 				<a class="navbar-brand">PlateMaps</a>
-			</div>
+			</div-->
 			<div id="navbar">
 				<ul class="navbar-right nav navbar-nav ">
 					<li><a href="#">Diggest</a></li>
@@ -26,7 +26,24 @@ View::beginBody();
 	</div>
 	<div id="Wrapper-body">
 		<div class="container">
-
+			<div class="row">
+				<h2 class="text-center">Plate Maps</h2>
+			</div>
+			<div class="row" id="search-form">
+				<div class="col-md-6 col-md-offset-3">
+					<form role="form">
+						<div class="row">
+							<div class="col-md-10" >
+								<input type="text" name="squery" placeholder="Makan apa? Dimana? Ketik disini"  class="form-control" />
+							</div>
+							<div class="col-md-2">
+								<button type="button" class="btn btn-danger btn-block">Cari</button>
+							</div>
+						</div>
+						<a href="#" class="label label-warning">Advance Search</a>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 

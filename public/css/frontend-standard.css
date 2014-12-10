@@ -18,3 +18,17 @@ h1,h2,h3,h4,h5,p,span,body{
 	left:0;
 	width:100%;
 }
+
+#search-form .row [class *= "-10"] , #search-form .row [class *= "-2"] {
+	padding-right:0;
+	padding-left:0;
+}
+
+#Wrapper-body{
+	padding-top:10%;
+}
+
+#Wrapper-botfooter .container{
+	padding-top:15px;
+	padding-bottom:15px;
+}
