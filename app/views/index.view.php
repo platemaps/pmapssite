@@ -2,32 +2,47 @@
 View::begin();
 View::beginHead();
 	View::title('Index Page');
-	View::meta("keywords" , "hehe");
+	View::meta("viewport" , "width=device-width, initial-scale=1");
 	View::css("bootstrap");
 	View::css("frontend-standard.css");
+	View::css("frontend-standard-responsive.css");
 View::endHead();
 View::beginBody();
 ?>
 
 <div id="Wrapper">
-	<div id="Wrapper-header">
+	<div id="Wrapper-header" role="navigation" class="navbar navbar-inverse">
 		<div class="container">
-			<!--div id="navbar-header">
+
+			<div id="navbar-header">
+				<button type="button" 
+						class="navbar-toggle collapsed" 
+						data-toggle="collapse"
+						data-target="#navbar"
+						aria-expanded="false"
+						aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<a class="navbar-brand">PlateMaps</a>
-			</div-->
-			<div id="navbar">
-				<ul class="navbar-right nav navbar-nav ">
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="navbar-right nav navbar-nav">
 					<li><a href="#">Diggest</a></li>
 					<li><a href="#">Featured</a></li>
 					<li><a href="#">Login</a></li>
 				</ul>
 			</div>
-		</div>
+
+		</div>		
 	</div>
 	<div id="Wrapper-body">
-		<div class="container">
-			<div class="row">
-				<h2 class="text-center">Plate Maps</h2>
+		<div class="container" id="front-home">
+			<div class="row" id="logo">
+				<h2 class="text-center" >Plate Maps</h2>
 			</div>
 			<div class="row" id="search-form">
 				<div class="col-md-6 col-md-offset-3">
@@ -52,7 +67,7 @@ View::beginBody();
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<h3 class="text-center">Plate maps</h3>
+						<h3 class="text-center" id="logo-footer">Plate Maps</h3>
 					</div>
 					<div class="col-md-2">
 						<ul>

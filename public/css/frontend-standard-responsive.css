@@ -1,0 +1,36 @@
+@media (max-width: 767px) { 
+
+}
+@media (min-width: 768px) {	
+
+}
+
+@media (min-width: 992px) {
+	.stay-bottom{
+		position: absolute !important;
+		bottom:0;
+		left:0;
+		width:100%;
+	}
+
+	#logo-footer{
+		display:block;
+	}
+
+	#front-home #logo{
+		display:block !important;
+	}
+
+	#search-form .row [class *= "-10"] , #search-form .row [class *= "-2"] {
+		padding-right:0;
+		padding-left:0;
+	}
+
+	.navbar-brand{
+		display:none !important;
+	}
+}
+
+@media (min-width: 1200px) {
+
+}
