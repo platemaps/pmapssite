@@ -2,28 +2,8 @@
 
 }
 @media (min-width: 768px) {	
-
-}
-
-@media (min-width: 992px) {
-	.stay-bottom{
-		position: absolute !important;
-		bottom:0;
-		left:0;
-		width:100%;
-	}
-
-	#logo-footer{
-		display:block;
-	}
-
 	#front-home #logo{
 		display:block !important;
-	}
-
-	#search-form .row [class *= "-10"] , #search-form .row [class *= "-2"] {
-		padding-right:0;
-		padding-left:0;
 	}
 
 	.navbar-brand{
@@ -31,6 +11,27 @@
 	}
 }
 
+@media (min-width: 992px) {
+	#logo-footer{
+		display:block;
+	}
+
+	#search-form .row [class *= "-10"] , #search-form .row [class *= "-2"] {
+		padding-right:0;
+		padding-left:0;
+	}
+
+}
+
 @media (min-width: 1200px) {
 
+}
+
+@media (min-width: 992px) and (min-height: 600px) {
+	.stay-bottom{
+		position: absolute !important;
+		bottom:0;
+		left:0;
+		width:100%;
+	}
 }

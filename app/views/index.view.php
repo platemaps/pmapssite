@@ -11,7 +11,7 @@ View::beginBody();
 ?>
 
 <div id="Wrapper">
-	<div id="Wrapper-header" role="navigation" class="navbar navbar-inverse">
+	<div id="Wrapper-header" role="navigation">
 		<div class="container">
 
 			<div id="navbar-header">
@@ -20,7 +20,8 @@ View::beginBody();
 						data-toggle="collapse"
 						data-target="#navbar"
 						aria-expanded="false"
-						aria-controls="navbar">
+						aria-controls="navbar"
+						id="navbar-collapse-button">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -28,7 +29,8 @@ View::beginBody();
 				</button>
 				<a class="navbar-brand">PlateMaps</a>
 			</div>
-			
+		</div>
+		<div class="container">
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="navbar-right nav navbar-nav">
 					<li><a href="#">Diggest</a></li>
@@ -36,7 +38,6 @@ View::beginBody();
 					<li><a href="#">Login</a></li>
 				</ul>
 			</div>
-
 		</div>		
 	</div>
 	<div id="Wrapper-body">
@@ -48,14 +49,17 @@ View::beginBody();
 				<div class="col-md-6 col-md-offset-3">
 					<form role="form">
 						<div class="row">
-							<div class="col-md-10" >
-								<input type="text" name="squery" placeholder="Makan apa? Dimana? Ketik disini"  class="form-control" />
-							</div>
-							<div class="col-md-2">
-								<button type="button" class="btn btn-danger btn-block">Cari</button>
+							<div class="col-md-12" >
+								<div class="input-group">
+									<input type="text" name="squery" placeholder="Makan apa? Dimana? Ketik disini"  class="form-control" />	
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-danger btn-block">Cari</button>
+									</span>
+								</div>
+								
 							</div>
 						</div>
-						<a href="#" class="label label-warning">Advance Search</a>
+						<a href="#" class="label label-warning">Advance Search : </a>
 					</form>
 				</div>
 			</div>
@@ -78,7 +82,8 @@ View::beginBody();
 						</ul>
 					</div>
 					<div class="col-md-6 text-justify">
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						<h4>Lorem ipsum dolor</h4>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 					</div>
 					<div class="col-md-2">
 						<p class="text-center"><button type="button" class="btn btn-success">let's Add Some</button></p>

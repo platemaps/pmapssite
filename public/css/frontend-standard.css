@@ -16,6 +16,10 @@ h1,h2,h3,h4,h5,p,span,body{
 	width:100%;
 }
 
+#Wrapper-header , #Wrapper-botfooter{
+	background-color:#040707;
+}
+
 #front-home{
 	padding-top:10%;
 	padding-bottom:10%;
@@ -28,6 +32,7 @@ h1,h2,h3,h4,h5,p,span,body{
 #Wrapper-botfooter .container{
 	padding-top:15px;
 	padding-bottom:15px;
+	color:#666;
 }
 
 #logo-footer{
@@ -37,8 +42,8 @@ h1,h2,h3,h4,h5,p,span,body{
 }
 
 #Wrapper-topfooter{
-	background:#eee;
-	border-bottom:2px solid #ccc;
+
+	border-top:1px solid #DEDEDF;
 }
 
 #Wrapper-topfooter .container .row > div{
@@ -46,7 +51,14 @@ h1,h2,h3,h4,h5,p,span,body{
 	padding-bottom:15px;
 }
 
-#Wrapper-botfooter{
-	background: #999;
+#navbar-collapse-button{
+	border:1px solid #333;
 }
 
+#navbar-collapse-button span{
+	background:#ccc;
+}
+
+#navbar a{
+	color:#fff;
+}
