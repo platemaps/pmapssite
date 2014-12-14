@@ -6,7 +6,7 @@ function defineurl(){
 	if($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '127.0.0.1'){
 		return 'http://'. $_SERVER['SERVER_NAME'] . '/' . SITE_LOCAL_FOLDER;
 	}else{
-		return 'http://'. $_SERVER['SERVER_NAME'];
+		return 'http://'. $_SERVER['SERVER_NAME'] . '/'. SITE_LOCAL_FOLDER;
 	}
 }
 

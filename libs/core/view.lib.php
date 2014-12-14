@@ -69,7 +69,7 @@ class View extends Singleton{
 		echo sprintf(self::$linkpattern , 'stylesheet' , 'text/css' , $url);
 	}
 
-	public static function includeImg(){}
+	//public static function includeImg(){}
 
 	public static function bootstrapCss(){
 		echo '<link rel="stylesheet" type="text/css" href="" />';

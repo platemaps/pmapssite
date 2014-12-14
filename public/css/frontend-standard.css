@@ -1,7 +1,8 @@
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
 html,body{
 	height:100%;
+	background-color : #F9FAFB;
 }
 
 h1,h2,h3,h4,h5,p,span,body{
@@ -26,7 +27,17 @@ h1,h2,h3,h4,h5,p,span,body{
 }
 
 #front-home #logo{
+	position: relative;
 	display:none;
+}
+
+#hlogo{
+	background: url("../images/hlogo.png") no-repeat;
+	width:166px;
+	height:44px;
+	display:block;
+	margin:0 auto;
+	position: relative;
 }
 
 #Wrapper-botfooter .container{
@@ -42,8 +53,9 @@ h1,h2,h3,h4,h5,p,span,body{
 }
 
 #Wrapper-topfooter{
-
-	border-top:1px solid #DEDEDF;
+	display:none;
+	border-top:1px solid #eeeeee;
+	background : #F8F9F9;
 }
 
 #Wrapper-topfooter .container .row > div{
@@ -61,4 +73,20 @@ h1,h2,h3,h4,h5,p,span,body{
 
 #navbar a{
 	color:#fff;
+}
+
+#flogo_one{
+	display:block;
+}
+
+#flogo_one img{
+	display:block;
+	position: relative;
+	width:100%;
+}
+
+#fpiring{
+	display:block;
+	position: relative;
+	margin:0 auto;
 }

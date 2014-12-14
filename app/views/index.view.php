@@ -43,7 +43,8 @@ View::beginBody();
 	<div id="Wrapper-body">
 		<div class="container" id="front-home">
 			<div class="row" id="logo">
-				<h2 class="text-center" >Plate Maps</h2>
+				<!--h2 class="text-center" >Plate Maps</h2-->
+				<a href="#" id="hlogo"></a>
 			</div>
 			<div class="row" id="search-form">
 				<div class="col-md-6 col-md-offset-3">
@@ -71,7 +72,10 @@ View::beginBody();
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<h3 class="text-center" id="logo-footer">Plate Maps</h3>
+						<!--h3 class="text-center" id="logo-footer">Plate Maps</h3-->
+						<a id="flogo_one" href="#">
+							<img src="<?php echo SITE_URL . "/public/images/flogo.png" ?>" />
+						</a>
 					</div>
 					<div class="col-md-2">
 						<ul>
@@ -86,6 +90,7 @@ View::beginBody();
 						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 					</div>
 					<div class="col-md-2">
+						<img src="<?php echo SITE_URL . "/public/images/plogo.png"; ?>" id="fpiring" />
 						<p class="text-center"><button type="button" class="btn btn-success">let's Add Some</button></p>
 					</div>
 				</div>
@@ -94,7 +99,7 @@ View::beginBody();
 		<div id="Wrapper-botfooter">
 			<div class="container">
 				<div class="pull-right">
-					Platemaps &copy; 2014. All Rights Reserved
+					Faq About Us Term of Service Privacy Policy | Platemaps &copy; 2014. All Rights Reserved
 				</div>
 				<div class="clearfix"></div>
 			</div>
